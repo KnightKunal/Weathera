@@ -1,0 +1,139 @@
+    body {
+      background: linear-gradient(123deg, red, rgb(212, 0, 255), rgb(255, 0, 247));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 7px;
+      box-shadow: 0 0 89px 14px rgb(10, 10, 10);
+      height: fit-content;
+      width: 450px;
+      transition: transform 0.1s ease-in;
+      animation: moveup 2s ease-out;
+    }
+
+    .container:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      transform: scale(1.02);
+      box-shadow: 0 0 100px 14px rgb(10, 10, 10);
+    }
+
+    @keyframes moveup {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    .box1 {
+      padding-bottom: 5px;
+      border-bottom: 4px dashed red;
+      color: #fff;
+      font-size: 30px;
+    }
+
+    #cityname {
+      height: 47px;
+      width: 50%;
+      background-color: rgba(0, 0, 0, 0.1);
+      border: none;
+      box-shadow: 0 0 8px;
+      padding: 4px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .box2 {
+      background-color: rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 15px rgb(10, 10, 10);
+      padding: 18px;
+      border-radius: 4px;
+    }
+
+    .heading1 {
+      color: #fff;
+      width: 24ch;
+      text-align: center;
+      font-size: 80px;
+      text-shadow: 5px 7px 6px rgb(10, 10, 10);
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 4px solid #fff;
+      animation: typing 4s steps(24), blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0
+      }
+
+      to {
+        width: 24ch
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent
+      }
+    }
+
+    .heading2 {
+      margin: 0;
+      color: #fff;
+      text-align: center;
+      font-size: 29px;
+      text-shadow: 5px 7px 6px rgb(10, 10, 10);
+    }
+
+    .box2 ul li {
+      font-size: 20px;
+      list-style: none;
+      text-align: center;
+      color: aquamarine;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 4px;
+      right: 4px;
+      font-size: 34px;
+      color: #08c71b;
+      text-shadow: 4px 2px 20px #00ffcc, 0 0 20px #00ffcc;
+      animation: glow 5s infinite;
+    }
+
+    @keyframes glow {
+
+      0%,
+      20%,
+      40%,
+      60%,
+      80%,
+      100% {
+        opacity: 1;
+      }
+
+      10%,
+      30%,
+      50%,
+      70%,
+      90% {
+        opacity: 0.4;
+      }
+
+    }
