@@ -1,4 +1,4 @@
-const apiKey = "3c7828a18fb47cb5ffdcceccdae7bcec";
+const apiKey = "REPLACE_THIS_WITH_YOUR_OWN_KEY";
 const cityInput = document.querySelector("#cityname");
 
 // Prevent form reload
@@ -65,3 +65,4 @@ async function getWeather(url, value) {
     document.querySelector(".box2").appendChild(errorText);
   }
 }
+
